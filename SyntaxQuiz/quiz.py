@@ -19,8 +19,11 @@ import binascii
 import contextlib
 import difflib
 import io
+import os
 import random
 import re
+import shutil
+import tempfile
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -76,17 +79,35 @@ def parse_questions(text):
     return questions
 
 
+@contextlib.contextmanager
+def _scratch_folder():
+    """Work inside a new empty folder, then remove it.
+
+    Question code may create files. They land here, so every run starts with
+    no files and nothing is left behind in the repo.
+    """
+    start = os.getcwd()
+    folder = tempfile.mkdtemp(prefix="syntax_quiz_")
+    os.chdir(folder)
+    try:
+        yield
+    finally:
+        os.chdir(start)
+        shutil.rmtree(folder, ignore_errors=True)
+
+
 def _run_expression(expression, setup):
     """Run the setup line, then return the value of the expression."""
     names = {}
-    exec(setup, names)
-    return eval(expression, names)
+    with _scratch_folder():
+        exec(setup, names)
+        return eval(expression, names)
 
 
 def _run_and_capture(code):
     """Run code and return everything it printed."""
     output = io.StringIO()
-    with contextlib.redirect_stdout(output):
+    with _scratch_folder(), contextlib.redirect_stdout(output):
         exec(code, {})
     return output.getvalue()
 

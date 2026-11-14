@@ -110,3 +110,103 @@ task: Give the list in the name called marks in order, smallest first
 setup: marks = [3, 1, 2]
 hidden: c29ydGVkKG1hcmtzKQ==
 must_use: marks
+---
+type: predict
+topic: conditions
+code:
+x = 5
+if x > 10:
+    print("big")
+print("done")
+---
+type: predict
+topic: conditions
+code:
+marks = 85
+if marks >= 40:
+    print("pass")
+elif marks >= 80:
+    print("distinction")
+---
+type: predict
+topic: conditions
+code:
+x = 15
+if x > 10:
+    print("A")
+if x > 5:
+    print("B")
+---
+type: predict
+topic: conditions
+code:
+n = 7
+if n % 2 == 0:
+    print("even")
+else:
+    print("odd")
+---
+type: predict
+topic: conditions
+code:
+age = 20
+has_ticket = False
+if age >= 18:
+    if has_ticket:
+        print("enter")
+    else:
+        print("no ticket")
+else:
+    print("too young")
+---
+type: predict
+topic: conditions
+code:
+age = 16
+with_parent = True
+if age >= 18 or with_parent:
+    print("allowed")
+else:
+    print("not allowed")
+---
+type: predict
+topic: conditions
+code:
+name = ""
+if name:
+    print("hello")
+else:
+    print("no name")
+---
+type: predict
+topic: conditions
+code:
+logged_in = False
+if not logged_in:
+    print("please log in")
+else:
+    print("welcome")
+---
+type: predict
+topic: conditions
+code:
+password = "Abc"
+if password == "abc":
+    print("correct")
+else:
+    print("wrong")
+---
+type: predict
+topic: conditions
+code:
+if "a" in "team":
+    print("found")
+else:
+    print("missing")
+---
+type: predict
+topic: conditions
+code:
+for n in range(1, 6):
+    if n % 2 == 0:
+        print(n)
