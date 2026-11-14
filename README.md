@@ -10,6 +10,7 @@ operations, try/except and the fork-and-pull-request flow a visible purpose.
 
 | File | What it is |
 |---|---|
+| `SyntaxQuiz/STUDENT_SETUP.md` | Students start here: fork, clone and open the notebook |
 | `SyntaxQuiz/01_syntax_quiz.ipynb` | The student lab |
 | `SyntaxQuiz/RUN_SHEET.md` | Facilitator timings and what to say when |
 | `SyntaxQuiz/quiz.py` | The game engine |
