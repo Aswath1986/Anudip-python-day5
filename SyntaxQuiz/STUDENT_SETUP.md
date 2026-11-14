@@ -46,7 +46,7 @@ Then click `01_syntax_quiz.ipynb`.
 
 ## 4. Start playing
 
-1. Run the first code cell (Part 0). It should print `Questions ready: 37`.
+1. Run the first code cell (Part 0). It should print `Questions ready: 89`.
 2. Run the Part 1 cell and type your answers in the box that appears. Press
    Enter after each one.
 3. Carry on down the notebook. Parts 6 and 7 give the Git commands for sending

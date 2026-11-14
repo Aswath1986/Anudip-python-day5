@@ -14,7 +14,7 @@ operations, try/except and the fork-and-pull-request flow a visible purpose.
 | `SyntaxQuiz/01_syntax_quiz.ipynb` | The student lab |
 | `SyntaxQuiz/RUN_SHEET.md` | Facilitator timings and what to say when |
 | `SyntaxQuiz/quiz.py` | The game engine |
-| `SyntaxQuiz/questions/` | 37 starter questions on Week 1; student questions go in `students/` |
+| `SyntaxQuiz/questions/` | 89 starter questions on Week 1; student questions go in `students/` |
 | `SyntaxQuiz/broken_examples/` | A question file with a typo, used for the try/except lesson |
 
 Answers in the question files are stored encoded, so students cannot read

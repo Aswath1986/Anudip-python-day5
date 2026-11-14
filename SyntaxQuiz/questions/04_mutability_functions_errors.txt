@@ -68,3 +68,95 @@ except ZeroDivisionError:
     print("oops")
 else:
     print("no error")
+---
+type: predict
+topic: mutability
+code:
+a = [1]
+b = a
+a = [2]
+print(b)
+---
+type: predict
+topic: mutability
+code:
+def add_nine(items):
+    items.append(9)
+
+numbers = [1]
+add_nine(numbers)
+print(numbers)
+---
+type: predict
+topic: mutability
+code:
+pet = "cat"
+pet.upper()
+print(pet)
+---
+type: predict
+topic: functions
+code:
+def power(n, p=2):
+    return n ** p
+
+print(power(3))
+print(power(2, 3))
+---
+type: predict
+topic: functions
+code:
+x = 1
+
+def change():
+    x = 2
+
+change()
+print(x)
+---
+type: predict
+topic: functions
+code:
+def check(n):
+    if n > 0:
+        return "positive"
+    return "not positive"
+
+print(check(-2))
+---
+type: code
+topic: functions
+task: Use the function called area to find the area for width 3 and height 4
+setup: def area(w, h): return w * h
+hidden: YXJlYSgzLCA0KQ==
+must_use: area
+---
+type: predict
+topic: errors
+code:
+items = [1, 2]
+try:
+    print(items[5])
+except IndexError:
+    print("no such position")
+---
+type: predict
+topic: errors
+code:
+try:
+    n = int("12")
+    print(n + 1)
+except ValueError:
+    print("bad number")
+else:
+    print("ok")
+finally:
+    print("bye")
+---
+type: predict
+topic: errors
+code:
+try:
+    print("2" + 2)
+except TypeError:
+    print("cannot add")

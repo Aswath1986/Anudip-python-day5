@@ -80,3 +80,80 @@ a = [1, 2]
 b = [1, 2]
 print(a == b)
 print(a is b)
+---
+type: code
+topic: relational
+task: Check in one line that the name called x is between 1 and 10, including both ends
+setup: x = 5
+hidden: MSA8PSB4IDw9IDEw
+must_use: x
+---
+type: predict
+topic: relational
+code:
+print(5 == 5.0)
+print("5" == 5)
+---
+type: predict
+topic: relational
+code:
+print("apple" < "banana")
+print(10 > 9 > 8)
+---
+type: code
+topic: logical
+task: Check whether the name called day is "sat" or "sun"
+setup: day = "sun"
+hidden: ZGF5ID09ICJzYXQiIG9yIGRheSA9PSAic3VuIg==
+must_use: day
+---
+type: predict
+topic: logical
+code:
+print(bool(""))
+print(bool("0"))
+print(bool(0))
+---
+type: code
+topic: bitwise
+task: Use the OR bitwise operator on 12 and 10
+hidden: MTIgfCAxMA==
+must_use: |
+---
+type: code
+topic: bitwise
+task: Shift the number 20 one place to the right
+hidden: MjAgPj4gMQ==
+must_use: >>
+---
+type: predict
+topic: bitwise
+code:
+locked = 65 ^ 42
+print(locked ^ 42)
+---
+type: code
+topic: membership
+task: Check whether the text "py" is inside the name called language
+setup: language = "python"
+hidden: InB5IiBpbiBsYW5ndWFnZQ==
+must_use: in
+---
+type: predict
+topic: membership
+code:
+print(3 in [1, 2, 3])
+print("3" in [1, 2, 3])
+---
+type: code
+topic: identity
+task: Check that the names a and b do not point to the same object
+setup: a = [1]; b = [1]
+hidden: YSBpcyBub3QgYg==
+must_use: is, not
+---
+type: predict
+topic: identity
+code:
+x = None
+print(x is None)

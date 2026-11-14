@@ -37,3 +37,55 @@ topic: strings
 code:
 name = "Ravi"
 print(f"{name} has {len(name)} letters")
+---
+type: code
+topic: strings
+task: Get the first character of the name called word
+setup: word = "python"
+hidden: d29yZFswXQ==
+must_use: word
+---
+type: code
+topic: strings
+task: Get the last character of the name called word
+setup: word = "python"
+hidden: d29yZFstMV0=
+must_use: word
+---
+type: code
+topic: strings
+task: Get the first three characters of the name called word
+setup: word = "python"
+hidden: d29yZFs6M10=
+must_use: word
+---
+type: code
+topic: strings
+task: Join the names first and last with one space between them
+setup: first = "Asha"; last = "Kumar"
+hidden: Zmlyc3QgKyAiICIgKyBsYXN0
+must_use: first, last
+---
+type: code
+topic: strings
+task: Split the text in the name called sentence into a list of words
+setup: sentence = "I love Python"
+hidden: c2VudGVuY2Uuc3BsaXQoKQ==
+must_use: sentence
+---
+type: predict
+topic: strings
+code:
+print("ab" * 3)
+---
+type: predict
+topic: strings
+code:
+print("He said \"hi\"")
+---
+type: predict
+topic: strings
+code:
+print("a", "b", sep="-")
+print("x", end="")
+print("y")
