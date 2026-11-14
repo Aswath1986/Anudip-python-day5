@@ -1,0 +1,39 @@
+# Starter questions: formatted strings and escape sequences.
+
+type: code
+topic: strings
+task: Use an f-string to build the text Hello Asha from the name called name
+setup: name = "Asha"
+hidden: ZiJIZWxsbyB7bmFtZX0i
+must_use: name
+---
+type: code
+topic: strings
+task: Use an f-string to show the name called pi with exactly 2 decimal places
+setup: pi = 3.14159
+hidden: ZiJ7cGk6LjJmfSI=
+must_use: pi
+---
+type: code
+topic: strings
+task: Count the characters in the name called word
+setup: word = "python"
+hidden: bGVuKHdvcmQp
+---
+type: code
+topic: strings
+task: Turn the text in the name called city into capital letters
+setup: city = "chennai"
+hidden: Y2l0eS51cHBlcigp
+---
+type: predict
+topic: strings
+code:
+print("A\tB")
+print(len("A\nB"))
+---
+type: predict
+topic: strings
+code:
+name = "Ravi"
+print(f"{name} has {len(name)} letters")

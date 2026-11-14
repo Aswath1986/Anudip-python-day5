@@ -1,0 +1,82 @@
+# Starter questions: relational, logical, bitwise, membership and identity operators.
+
+type: code
+topic: relational
+task: Check whether the name called marks is 40 or more
+setup: marks = 55
+hidden: bWFya3MgPj0gNDA=
+must_use: marks
+---
+type: code
+topic: relational
+task: Check whether the names a and b hold different values
+setup: a = 7; b = 9
+hidden: YSAhPSBi
+must_use: a, b
+---
+type: code
+topic: logical
+task: Check that age is 18 or more and has_id is True, in one line
+setup: age = 20; has_id = True
+hidden: YWdlID49IDE4IGFuZCBoYXNfaWQ=
+must_use: and
+---
+type: code
+topic: logical
+task: Flip the value in the name called raining
+setup: raining = True
+hidden: bm90IHJhaW5pbmc=
+must_use: not
+---
+type: predict
+topic: logical
+code:
+print(True or False and False)
+print(not True or True)
+---
+type: code
+topic: bitwise
+task: Use the AND bitwise operator on 12 and 10
+hidden: MTIgJiAxMA==
+must_use: &
+---
+type: code
+topic: bitwise
+task: Use the XOR bitwise operator on 65 and 42
+hidden: NjUgXiA0Mg==
+must_use: ^
+---
+type: code
+topic: bitwise
+task: Shift the number 5 two places to the left
+hidden: NSA8PCAy
+must_use: <<
+---
+type: code
+topic: membership
+task: Check whether the letter a is inside the name called fruit
+setup: fruit = "banana"
+hidden: ImEiIGluIGZydWl0
+must_use: in
+---
+type: code
+topic: membership
+task: Check that 7 is missing from the name called numbers
+setup: numbers = [1, 3, 5]
+hidden: NyBub3QgaW4gbnVtYmVycw==
+must_use: not, in
+---
+type: code
+topic: identity
+task: Check whether the names a and b point to the very same object
+setup: a = [1, 2]; b = a
+hidden: YSBpcyBi
+must_use: is
+---
+type: predict
+topic: identity
+code:
+a = [1, 2]
+b = [1, 2]
+print(a == b)
+print(a is b)

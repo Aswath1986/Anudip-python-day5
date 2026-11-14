@@ -1,0 +1,64 @@
+# Starter questions: typecasting and number systems.
+# A line that starts with # is a note. --- separates two questions.
+
+type: code
+topic: typecasting
+task: Turn the text in the name age into a whole number
+setup: age = "21"
+hidden: aW50KGFnZSk=
+---
+type: code
+topic: typecasting
+task: Turn the number in the name marks into text
+setup: marks = 87
+hidden: c3RyKG1hcmtzKQ==
+---
+type: code
+topic: typecasting
+task: Turn the text in the name price into a decimal number
+setup: price = "49.50"
+hidden: ZmxvYXQocHJpY2Up
+---
+type: code
+topic: typecasting
+task: Drop the decimal part of the number in the name height
+setup: height = 5.9
+hidden: aW50KGhlaWdodCk=
+---
+type: predict
+topic: typecasting
+code:
+print("5" + "5")
+print(int("5") + int("5"))
+---
+type: code
+topic: number systems
+task: Show the number 10 in binary
+hidden: YmluKDEwKQ==
+---
+type: code
+topic: number systems
+task: Show the number 255 in hexadecimal
+hidden: aGV4KDI1NSk=
+---
+type: code
+topic: number systems
+task: Turn the binary text in the name bits into a decimal number
+setup: bits = "1010"
+hidden: aW50KGJpdHMsIDIp
+---
+type: code
+topic: number systems
+task: Turn the hexadecimal text in the name colour into a decimal number
+setup: colour = "ff"
+hidden: aW50KGNvbG91ciwgMTYp
+---
+type: code
+topic: number systems
+task: Find the number that stands for the letter A
+hidden: b3JkKCJBIik=
+---
+type: code
+topic: number systems
+task: Find the letter that the number 97 stands for
+hidden: Y2hyKDk3KQ==

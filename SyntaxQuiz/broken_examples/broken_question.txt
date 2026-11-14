@@ -1,0 +1,4 @@
+type: code
+topic: typecasting
+task: Turn the text "12" into a whole number
+anser: int("12")

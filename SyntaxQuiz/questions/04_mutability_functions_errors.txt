@@ -1,0 +1,70 @@
+# Starter questions: mutable and immutable objects, functions, try and except.
+
+type: predict
+topic: mutability
+code:
+a = [1, 2]
+b = a
+b.append(3)
+print(a)
+---
+type: predict
+topic: mutability
+code:
+a = "hi"
+b = a
+b = b + "!"
+print(a)
+---
+type: predict
+topic: mutability
+code:
+point = (1, 2)
+try:
+    point[0] = 9
+except TypeError:
+    print("cannot change")
+---
+type: code
+topic: mutability
+task: Make a separate copy of the list in the name called original
+setup: original = [1, 2, 3]
+hidden: b3JpZ2luYWwuY29weSgp
+must_use: original
+---
+type: predict
+topic: functions
+code:
+def double(n):
+    return n * 2
+
+print(double(4) + double(1))
+---
+type: predict
+topic: functions
+code:
+def greet(name):
+    print("Hi", name)
+
+result = greet("Asha")
+print(result)
+---
+type: predict
+topic: errors
+code:
+try:
+    print(int("ten"))
+except ValueError:
+    print("not a number")
+finally:
+    print("done")
+---
+type: predict
+topic: errors
+code:
+try:
+    print(10 // 2)
+except ZeroDivisionError:
+    print("oops")
+else:
+    print("no error")
