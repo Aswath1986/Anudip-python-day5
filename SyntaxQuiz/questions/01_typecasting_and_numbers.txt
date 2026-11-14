@@ -62,3 +62,45 @@ type: code
 topic: number systems
 task: Find the letter that the number 97 stands for
 hidden: Y2hyKDk3KQ==
+---
+type: code
+topic: typecasting
+task: Turn the number in the name called count into a True or False value
+setup: count = 0
+hidden: Ym9vbChjb3VudCk=
+---
+type: code
+topic: typecasting
+task: Find the type of the value in the name called x
+setup: x = 3.5
+hidden: dHlwZSh4KQ==
+must_use: type
+---
+type: predict
+topic: typecasting
+code:
+print(int("7") * 2)
+print("7" * 2)
+---
+type: predict
+topic: typecasting
+code:
+print(10 / 2)
+print(10 // 2)
+print(10 % 3)
+---
+type: predict
+topic: number systems
+code:
+print(bin(5))
+print(hex(16))
+---
+type: predict
+topic: number systems
+code:
+print(chr(ord("a") + 1))
+---
+type: predict
+topic: number systems
+code:
+print(0b11 + 0x0f)

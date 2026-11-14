@@ -1,0 +1,112 @@
+# Starter questions: if, for, while and built-in functions.
+
+type: predict
+topic: conditions
+code:
+marks = 35
+if marks >= 40:
+    print("pass")
+else:
+    print("fail")
+---
+type: predict
+topic: conditions
+code:
+temp = 30
+if temp > 35:
+    print("hot")
+elif temp > 25:
+    print("warm")
+else:
+    print("cool")
+---
+type: predict
+topic: loops
+code:
+for i in range(3):
+    print(i)
+---
+type: predict
+topic: loops
+code:
+for ch in "hi":
+    print(ch.upper())
+---
+type: predict
+topic: loops
+code:
+total = 0
+for n in [1, 2, 3]:
+    total += n
+print(total)
+---
+type: predict
+topic: loops
+code:
+n = 3
+while n > 0:
+    print(n)
+    n -= 1
+---
+type: predict
+topic: loops
+code:
+for i in range(10):
+    if i == 3:
+        break
+    print(i)
+---
+type: predict
+topic: loops
+code:
+for i in range(5):
+    if i % 2 == 0:
+        continue
+    print(i)
+---
+type: code
+topic: loops
+task: Use range to make the list of numbers 0, 1, 2, 3, 4
+hidden: bGlzdChyYW5nZSg1KSk=
+must_use: range
+---
+type: code
+topic: loops
+task: Use range to make the list 2, 4, 6, 8, 10
+hidden: bGlzdChyYW5nZSgyLCAxMSwgMikp
+must_use: range
+---
+type: code
+topic: built-ins
+task: Add up all the numbers in the name called prices
+setup: prices = [10, 20, 30]
+hidden: c3VtKHByaWNlcyk=
+must_use: prices
+---
+type: code
+topic: built-ins
+task: Find the largest number in the name called prices
+setup: prices = [10, 20, 30]
+hidden: bWF4KHByaWNlcyk=
+must_use: prices
+---
+type: code
+topic: built-ins
+task: Round the number in the name called pi to 2 decimal places, keeping it a number
+setup: pi = 3.14159
+hidden: cm91bmQocGksIDIp
+must_use: pi
+---
+type: code
+topic: built-ins
+task: Remove the minus sign from the number in the name called n
+setup: n = -7
+hidden: YWJzKG4p
+must_use: n
+---
+type: code
+topic: built-ins
+task: Give the list in the name called marks in order, smallest first
+setup: marks = [3, 1, 2]
+hidden: c29ydGVkKG1hcmtzKQ==
+must_use: marks
