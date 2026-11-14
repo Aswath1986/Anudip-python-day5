@@ -1,0 +1,112 @@
+# Starter questions: opening, writing and reading files.
+# The game runs each question in its own empty folder, so no file exists
+# until the question creates it, and nothing is left behind afterwards.
+
+type: predict
+topic: files
+code:
+with open("note.txt", "w") as file:
+    file.write("hello")
+
+with open("note.txt") as file:
+    print(file.read())
+---
+type: predict
+topic: files
+code:
+with open("note.txt", "w") as file:
+    file.write("one")
+with open("note.txt", "w") as file:
+    file.write("two")
+
+with open("note.txt") as file:
+    print(file.read())
+---
+type: predict
+topic: files
+code:
+with open("note.txt", "w") as file:
+    file.write("one")
+with open("note.txt", "a") as file:
+    file.write("two")
+
+with open("note.txt") as file:
+    print(file.read())
+---
+type: predict
+topic: files
+code:
+with open("names.txt", "w") as file:
+    file.write("Asha\nRavi\nMeena\n")
+
+with open("names.txt") as file:
+    print(len(file.readlines()))
+---
+type: predict
+topic: files
+code:
+with open("names.txt", "w") as file:
+    file.write("asha\nravi\n")
+
+with open("names.txt") as file:
+    for line in file:
+        print(line.strip().upper())
+---
+type: predict
+topic: files
+code:
+try:
+    with open("missing.txt") as file:
+        print(file.read())
+except FileNotFoundError:
+    print("no such file")
+---
+type: predict
+topic: files
+code:
+try:
+    with open("count.txt", "w") as file:
+        file.write(5)
+except TypeError:
+    print("text only")
+---
+type: predict
+topic: files
+code:
+with open("count.txt", "w") as file:
+    file.write("10")
+
+with open("count.txt") as file:
+    n = file.read()
+
+print(n + "5")
+print(int(n) + 5)
+---
+type: predict
+topic: files
+code:
+with open("note.txt", "w") as file:
+    file.write("hi")
+
+print(file.closed)
+---
+type: code
+topic: files
+task: The file city.txt is already written. Open it and read all of its text, in one line
+setup: f = open("city.txt", "w"); f.write("Chennai"); f.close()
+hidden: b3BlbigiY2l0eS50eHQiKS5yZWFkKCk=
+must_use: open
+---
+type: code
+topic: files
+task: The file names.txt is already written. Open it and read it as a list of lines, in one line
+setup: f = open("names.txt", "w"); f.write("Asha\nRavi\n"); f.close()
+hidden: b3BlbigibmFtZXMudHh0IikucmVhZGxpbmVzKCk=
+must_use: open
+---
+type: code
+topic: files
+task: The file names.txt is already written. Count how many lines it has, in one line
+setup: f = open("names.txt", "w"); f.write("Asha\nRavi\nMeena\n"); f.close()
+hidden: bGVuKG9wZW4oIm5hbWVzLnR4dCIpLnJlYWRsaW5lcygpKQ==
+must_use: open
