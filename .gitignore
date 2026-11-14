@@ -1,3 +1,8 @@
+# Secrets never go to GitHub. Git skips every path listed here.
+SecureChannel/teacher_private_key.pem
+SecureChannel/roster.txt
+SecureChannel/my_secrets/
+
 # Python and Jupyter leftovers
 __pycache__/
 .ipynb_checkpoints/

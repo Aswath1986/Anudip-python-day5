@@ -1,0 +1,4 @@
+# Facilitator only: copy this file to roster.txt and write one student name per line.
+# roster.txt is listed in .gitignore, so the real names stay on your laptop.
+Asha Kumar
+Ravi Shankar
