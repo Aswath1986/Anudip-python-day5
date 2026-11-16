@@ -1,6 +1,16 @@
 # Anudip-python-day5
 Covering all concepts with story method and strong industry use case
 
+## Day 5 lessons: functions in depth, modules and libraries
+
+| Path | What it is |
+|------|------------|
+| [`LESSON_PLAN.md`](LESSON_PLAN.md) | Facilitator plan: timings, the question to ask before each topic, common mistakes |
+| [`Day5_Structured/`](Day5_Structured) | 10 numbered lessons with PREDICT and TRY IT YOURSELF: arguments, defaults, `*args`, `**kwargs`, recursion, lambda, map/filter/reduce, modules, libraries, mini project |
+| [`Day5_DeepDive/`](Day5_DeepDive) | 5 first-principles deep dives for self-study |
+
+Suggested order: structured lessons 01 → 10 in class, deep dives 01 → 05 in your own time, then the Syntax Quiz below.
+
 ## SyntaxQuiz: the class builds a game, then plays it
 
 A quiz where every answer is a line of real Python that the game runs. Each
